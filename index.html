@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>form candidato</title>
+</head>
+
+<style>
+
+    *{margin:0;padding:0;box-sizing: border-box;}
+
+    body{
+        background-color: dimgray;
+    }
+    form{
+        background-color: rgb(160, 216, 216);
+        max-width: 500px;
+        width: 70%;
+        padding: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 25px; 
+    }
+    form h3{
+        text-align: center;
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    form input[type=text],
+    form input[type=password]{
+        width: 100%;
+        height: 45px;
+        border: 1px palevioletred;
+        padding-left: 10px;
+        margin: 10px 0;
+    }
+    form input[type=submit]{
+        width: 100%;
+        height: 30px;
+        color:  black;
+        cursor: pointer;
+        background-color: palevioletred;
+        border-radius: 15px;
+        border: 0;
+        transition: 1s;
+
+    }
+    form input[type=submit]:hover{
+        background-color: rgb(209, 96, 119);
+    }
+</style>
+
+<body>
+    <form>
+        <h3>entrar em contato</h3>
+        <input type="text" name="email" placeholder="seu email... "/>
+        <input type= "password" name="senha" placeholder="sua senha... "/>
+        <input type="submit" name="acao" value="enviar."/>
+    </form>
+</body>
+</html>
